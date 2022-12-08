@@ -76,7 +76,7 @@ p {
 }
 
 .benefits {
-    margin-right: 20px;
+    margin-right: auto;
     padding: 20px;
     clear: both;
     float: right;
@@ -84,6 +84,15 @@ p {
     height: 100%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #2589bd;
+}
+
+.user-benefits h2 {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-style: normal;
+    font-size: x-large;
+    color:#ffffff;
 }
 
 .benefit-lead {
@@ -197,4 +206,52 @@ p {
 
 .footer h2 {
     font-size: 20px;
+}
+
+/*used basic responsive web design with two media screens to optimize the website for smaller screens*/
+
+@media screen and (max-width: 992px) {
+    /*adjust header size to keep all links inside*/
+    .header {
+        height: 170px;
+    }
+    /*text align to the right so title and text stay separately*/
+    .header div ul {
+        text-align: right;
+        flex-direction: column;
+    }
+    /*550px is the ideal height to keep all the content inside*/
+    .search-engine-optimization {
+        height: 550px;
+    }
+    .online-reputation-management {
+        height: 550px;
+    }
+    .social-media-marketing {
+        height: 550px;
+    }
+    /*adjust font size to a smaller size*/
+    .benefit-lead h3 {
+        font-size: 12px;
+    }
+    .benefit-brand h3 {
+        font-size: 12px;
+    }
+    .benefit-cost h3 {
+        font-size: 12px;
+    }
+}
+
+/*hide images on the side bar*/
+
+@media screen and (max-width: 768px) {
+    .benefit-lead img {
+        display: none;
+    }
+    .benefit-brand img {
+        display: none;
+    }
+    .benefit-cost img {
+        display: none;
+    }
 }
