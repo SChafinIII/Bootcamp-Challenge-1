@@ -4,7 +4,7 @@
 The goal is to refactor a website for a market agency so that it contains the following: 
 
 - Accessibility for all screenreaders and devices. 
-- Logcially structured semantic HTML elements.
+- Logically structured semantic HTML elements.
 - Alternate attribues for image elements in the event they do not load. 
 - Logical structure for elements. independent of styling and positioning. 
 - Sequential Heading attribues. 
